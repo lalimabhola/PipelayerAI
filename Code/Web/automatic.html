@@ -1,0 +1,70 @@
+<!--Summer Martin, Lalima Bhola, Dom Lamastra-->
+<!--CSC 380 Pipelayer Project-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--title displayed on window-->
+    <title>Pipelayer</title>
+
+    <!--importing CSS file with design elements-->
+    <link rel="stylesheet" href="./gamestyle.css">
+
+    <!--importing tab icons-->
+    <link rel="icon" type="image/png" href="./assets/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/favicon-16.png" sizes="16x16" />
+
+    <!--import eel library-->
+    <script src="/eel.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="controls">
+        <!--creating grid size-->
+        <label>Grid Size
+            <input type="number" min="11" max="11" value="11" id="gridSize" />
+        </label>
+
+        <!--labels for players-->
+        <div class="player">
+            <span class="playerNum">Random</span>
+            <div2 value="#6e2192" id="p1Colour">&#x2756;</div2>
+            <div class="turn" id="turn">&#x2190;</div>
+        </div>
+
+        <div class="player">
+            <span class="playerNum">Heuristic</span>
+            <div3 value="#ffba03" id="p2Colour">&#x2756;</div3>
+        </div>
+
+        <!--guidance for which player uses which icon-->
+        <div class="instructions">
+            <div4><br>Random (P1) uses dots. <br><br> Heuristic (P2) uses squares. </div4>
+        </div>
+
+        <!--label on left hand side of game screen so user can easily view selected game mode-->
+        <div class="title">
+            <div5>Watch Game</div5>
+        </div>
+
+        <!--button to restart game-->
+        <button onClick="reset(); history.go(0);">Restart Game</button>
+
+        <!--button to return to game menu-->
+        <a href="index.html">BACK</a>
+    </div>
+
+    <!--labels for game area to use with CSS-->
+    <div class="gameArea">
+        <canvas>Not supported by browser</canvas>
+    </div>
+
+    <!--connected to corresponding javascript file-->
+    <script src="./automatic.js"></script>
+</body>
+
+</html>

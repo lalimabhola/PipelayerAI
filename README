@@ -1,0 +1,63 @@
+PipeLayer Game with Artificial Intelligence
+Summer Martin, Lalima Bhola, Dom Lamastra
+
+ABOUT GAME
+Pipelayer is a two player game where each player creates lines using different shaped icons. 
+The game is played with two grids of icons that are slightly offset from one another. One 
+player utilizes the circles and the other uses the squares. The players take turns moving 
+by connecting two of their respective icons to an adjacent icon. A player can only connect 
+icons that are adjacent horizontally or vertically and also only icons of their own shape. 
+No move may draw across another move. To win, a player must make a continuous connection 
+from one side of the board to the other in the long direction for their color of dots. The 
+player with the circles wins if they create a continuous vertical line from the top of the 
+game board to the bottom, while the player with the squares wins if they make a continuous 
+line from the left to the right.
+
+OUR FILES
+
+In Web Folder
+index: pertains to the game Menu
+instructions: pertains to the instructions page
+pipelayer: pertains to the human vs human game
+random: pertains to the human vs random agent game
+heurisitc: pertains to the human vs heuristic agent game
+automatic: pertains to the random agent vs heuristic agent game
+optimal: pertains to the heurisitc vs heurisitc game
+player1win: pertains to the screen that appears when the first player wins
+player2win: pertains to the screen that appears when the second player wins
+
+playGame: pertains to the code used to determine the winner and run the heuristic agent
+
+DataGeneration Folder: pertains to running 500 games for both Randon vs Heuristic and 
+Heuristic vs Heuristc and aquiring relevant data about the random and heuristic agent
+
+
+HOW TO RUN
+
+Installation:
+You will need to have Python installed.
+Make sure you also have numpy and eel for python installed.
+> pip3 install eel
+> pip3 install numpy
+
+Run the program with the following command:
+> python3 playGame.py
+
+
+DATA GENERATION
+
+Make sure you have matplotlib installed:
+> pip3 install matplotlib
+
+Run the data script with the following command:
+> bash ./run_demo.sh
+If your permission is denied try:
+> chmod 700 run_demo.sh
+
+
+MORE ABOUT THIS PROJECT
+
+Our project goal is to create a pipelayer game where the user competes against an Artificially 
+Intelligent agent. The motivation for this project came from the fact that for this game, it 
+has never been done before. As of this projects completion, December 2021, there us no other 
+computerized version of this game let alone one that allows you to play against an AI agent.

@@ -1,0 +1,76 @@
+<!--Summer Martin, Lalima Bhola, Dom Lamastra-->
+<!--CSC 380 Pipelayer Project-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--title displayed on window-->
+    <title>Pipelayer</title>
+
+    <!--importing CSS file with design elements-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--importing tab icons-->
+    <link rel="icon" type="image/png" href="./assets/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/favicon-16.png" sizes="16x16" />
+
+    <!--import eel library-->
+    <script src="/eel.js" type="text/javascript"></script>
+</head>
+
+<body class="p1win">
+    <p>Player One Wins!</p>
+
+    <!--create button to view game stats-->
+    <div class="container2">
+        <div class="center2">
+            <button class="stats" onclick="myFunction()">VIEW GAME STATS</button>
+        </div>
+    </div>
+
+    <!--in-line javascript for displaying alert windows/repeated alert() functions indicate back to back alert windows-->
+    <script>
+        async function myFunction() {
+            var play1 = new XMLHttpRequest();
+            play1.open('GET', 'gameStats/player1.txt');
+            play1.onload = function() {
+                alert("Total moves player 1: " + play1.responseText + "\n\n Click 'ok' to view player 2 stats");
+            }
+            play1.send();
+
+            var play2 = new XMLHttpRequest();
+            play2.open('GET', 'gameStats/player2.txt');
+            play2.onload = function() {
+                alert("Total moves player 2: " + play2.responseText + "\n\n Click 'ok' to view total time for game");
+            }
+            play2.send();
+
+            var time = new XMLHttpRequest();
+            time.open('GET', 'gameStats/time.txt');
+            time.onload = function() {
+                alert("Time played (in seconds): " + time.responseText);
+            }
+            time.send();
+        }
+    </script>
+
+    <div class="container2">
+        <div class="center2">
+            <button class="returnToMenu" onClick="reset()">RETURN TO MENU</button>
+        </div>
+    </div>
+
+    <!--in-line javascript for returning to game menu-->
+    <script>
+        async function reset() {
+            await eel.reset()();
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>

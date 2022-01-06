@@ -1,0 +1,262 @@
+/* Summer Martin, Lalima Bhola, Dom Lamastra
+CSC 380 Pipelayer Project */
+
+@font-face {
+    font-family: Dense;
+    src: url("./assets/dense.ttf");
+}
+
+body {
+    font: Dense;
+    min-width: 0rem;
+    display: block;
+    background-image: url("./assets/neon-grid.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-blend-mode: overlay;
+    background-position-y: -200px;
+    background-size: 100% 150%;
+}
+
+
+/*for p1 and p2 winner screens*/
+
+.p1win {
+    background-color: rgb(106, 25, 143);
+    background-image: url("./assets/confetti.gif");
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 250px;
+    margin-bottom: auto;
+    color: white;
+}
+
+.p2win {
+    background-color: rgb(207, 154, 9);
+    background-image: url("./assets/confetti.gif");
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 250px;
+    margin-bottom: auto;
+    color: white;
+}
+
+p {
+    font-family: Dense;
+    font: Dense;
+    margin: auto;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+embed {
+    color: white;
+    align-content: center;
+    margin-bottom: 1rem;
+}
+
+
+/*formatting for moves and time in player1win.html*/
+
+.p1 {
+    font-family: Dense;
+    font: Dense;
+    font-size: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    align-content: center;
+}
+
+
+/*formatting for moves and time in player2win.html*/
+
+.p2 {
+    font-family: Dense;
+    font: Dense;
+    font-size: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    align-content: center;
+}
+
+.backBtn {
+    margin-top: 2rem;
+}
+
+
+/*upon hover, underline text on navigation menu*/
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/*"MENU" title style*/
+
+.frame1 {
+    text-align: center;
+    font-family: Dense;
+    color: #ffba03;
+    font-size: 4rem;
+    margin: auto;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    /*purple area above MENU title*/
+    background-color: #6a198f;
+    width: 41rem;
+}
+
+.instr {
+    text-align: center;
+    font-family: Dense;
+    color: white;
+    font-size: 1.5rem;
+    margin: auto;
+    padding-top: 1rem;
+    background-color: #6a198f;
+    width: 41rem;
+    line-height: 1.5;
+}
+
+
+/*background of menu*/
+
+nav {
+    width: 40rem;
+    text-decoration: none;
+    background-color: #6a198f;
+    margin: auto;
+    text-align: center;
+    border: 0.5rem solid transparent;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    position: relative;
+    margin-bottom: 1rem;
+    /*gap before footer*/
+}
+
+nav a {
+    text-decoration: none;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: -0.25rem;
+    margin-bottom: 4rem;
+}
+
+ul {
+    font-family: Dense;
+    margin-top: 9rem;
+    list-style-type: none;
+}
+
+
+/*individual items (text) on menu*/
+
+li {
+    font-family: Dense;
+    margin: auto;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background-color: transparent;
+    box-shadow: 5px 5px 5px 0px, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(255, 139, 253, 0);
+    text-shadow: black 0px 0px 1px, black 0px 0px 10px, black 0px 0px 15px, #ffba03 0px 0px 0px, #ffba03 0px 0px 30px, #ffba03 0px 0px 40px, #ffba03 0px 0px 10px, #ffba03 0px 0px 75px;
+    border: 3px double #ffba03;
+    border-radius: 0.5rem;
+    color: #ffba03;
+}
+
+
+/*links (font) on menu*/
+
+a {
+    font-family: Dense;
+    font: Dense;
+    font-size: 1.5rem;
+    color: #ffba03;
+    margin: auto;
+    text-decoration: none;
+}
+
+
+/*used for placement of footer on menu and instruction screens*/
+
+footer {
+    font: Dense;
+    margin: auto;
+    text-align: center;
+    color: rgb(201, 196, 196);
+    font-size: 1.25rem;
+}
+
+element.style {
+    color: white;
+}
+
+
+/*used for centering game stats button on player win screens*/
+
+.container1 {
+    height: 6rem;
+    position: relative;
+}
+
+.center1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.stats {
+    font-family: Dense;
+    font: Dense;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+/*used for centering menu button on player win screens*/
+
+.container2 {
+    height: 6rem;
+    position: relative;
+}
+
+.center2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/*returning to main menu from player win screens*/
+
+.returnToMenu {
+    font-family: Dense;
+    font: Dense;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    text-decoration: none;
+    background-color: transparent;
+}

@@ -1,0 +1,151 @@
+/* Summer Martin, Lalima Bhola, Dom Lamastra
+CSC 380 Pipelayer Project */
+
+body,
+label,
+div,
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+@font-face {
+    font-family: Dense;
+    src: url("./assets/dense.ttf");
+}
+
+
+/* CONTROL AREA */
+
+.controls {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 100vh;
+    background-color: #2a2a2a;
+}
+
+label,
+.player {
+    height: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    visibility: hidden;
+}
+
+
+/*controls the titles of the player screens*/
+
+.title {
+    color: white;
+    font: 26px Dense;
+    margin-top: 24rem;
+}
+
+
+/*div2, 3, 4 control text on player screens*/
+
+div2 {
+    font-size: 40px;
+    color: #6a198f;
+}
+
+div3 {
+    font-size: 40px;
+    color: #ffba03;
+}
+
+div4 {
+    color: white;
+}
+
+
+/* LINK TAGS */
+
+a {
+    margin-bottom: 50%;
+    margin-top: 15%;
+    text-decoration: none;
+    font-family: Dense;
+    font-size: 25px;
+    color: white;
+    border: 3px double white;
+    border-radius: 0.35rem;
+    width: 7rem;
+    height: 2.5rem;
+    text-align: center;
+}
+
+button {
+    margin-top: auto;
+    text-decoration: none;
+    font-family: Dense;
+    font-size: 18.75px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0);
+    border: 3px double white;
+    border-radius: 0.35rem;
+    width: 7.5rem;
+    height: 2.5rem;
+    text-align: center;
+}
+
+
+/* PLAYER LABELS */
+
+.player {
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 25px;
+}
+
+.player span {
+    color: white;
+    font: 25px Dense;
+}
+
+.playerNum {
+    width: 100px;
+    justify-content: flex-start;
+}
+
+.instructions {
+    color: white;
+    font: 15px Dense;
+}
+
+.turn {
+    position: absolute;
+    color: #ffffff;
+    right: -85px;
+    transition: .3s;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.p2-turn {
+    margin-top: 93px;
+}
+
+
+/* GAME AREA */
+
+.gameArea {
+    flex-grow: 1;
+    min-width: 40rem;
+}
+
+canvas {
+    background-color: rgb(67, 159, 212);
+    border-radius: 5px;
+}
